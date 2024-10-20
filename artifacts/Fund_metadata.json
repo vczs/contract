@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.24+commit.e11b9ed9"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "fund",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "fundAmount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"fund.sol": "Fund"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"fund.sol": {
+			"keccak256": "0xe91a78f8b6d2fbb3848fa2b6284805a204a8673bb22699df9cb2ac343d9b18e3",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c68640c4299768eed3dbecc0cf7a36d7999ae026698e7069ddbdda6b9824a425",
+				"dweb:/ipfs/QmaUtZU8kygQntGyh3ASm9xRJGutBAPuRTtcWp93gzXjEF"
+			]
+		}
+	},
+	"version": 1
+}
