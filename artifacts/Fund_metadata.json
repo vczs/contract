@@ -64,19 +64,6 @@
 			},
 			{
 				"inputs": [],
-				"name": "getChainlinkDataFeedLatestAnswer",
-				"outputs": [
-					{
-						"internalType": "int256",
-						"name": "",
-						"type": "int256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
 				"name": "refund",
 				"outputs": [],
 				"stateMutability": "nonpayable",
@@ -132,11 +119,11 @@
 			]
 		},
 		"fund.sol": {
-			"keccak256": "0x916ec4b30f5bb92b96b0e929a0689afd7f15f31175a1fb40cdbb9dc8613cbbfb",
+			"keccak256": "0xe56498cd9842a6432dbc99c2559cb5e896070e6c20eec555c6d5e825c36879b7",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c1a8c9a3f4d70209a62ad5c01f0df53df4b31634117971720668d57bc9efd63d",
-				"dweb:/ipfs/QmZUoBioqD1TwZTFnaPtJt92TEW2nbf6AG6bRX3A5aX7pN"
+				"bzz-raw://ff413bb71473b9286340a5ce3e40442cfca907425e9ce7eaf8e4574d4b78adb3",
+				"dweb:/ipfs/QmYbfxMp1yeKKZPHVk3y2AuTrhmndosgUU7mt1mVWhoVFP"
 			]
 		}
 	},

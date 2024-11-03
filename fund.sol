@@ -41,10 +41,10 @@ contract Fund{
     function refund() external fundIsClose {
         require(ethToUsd(address(this).balance) < CONTRACT_TARGET_USD_AMOUNT,"target is reached~");
         require(fundAmount[msg.sender] != 0, "there is no fund for you~");
+        fundAmount[msg.sender] = 0; // 先将余额置零，防止重入攻击
         bool success;
         (success, )=payable(msg.sender).call{value: fundAmount[msg.sender]}("");
         require(success,"refund transfer failed~");
-        fundAmount[msg.sender] = 0;
     }
     // 合约提款
     function drawFund() external fundIsClose onlyOWner{
@@ -62,7 +62,7 @@ contract Fund{
     //**********************************************************************//
 
     // 获取最新ETH/USD价格数据
-    function getChainlinkDataFeedLatestAnswer() public view returns (int) {
+    function getChainlinkDataFeedLatestAnswer() private view returns (int) {
         ( ,int answer, , ,) = dataFeed.latestRoundData();
         return answer;
     }
