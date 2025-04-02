@@ -18,7 +18,7 @@ contract DutchAuction {
     IERC721 public immutable nft;
     uint public immutable nftId;
 
-    _constructor(uint _startingPrice,uint _discountRate, address _nft,uint _nftId) {
+    constructor(uint _startingPrice,uint _discountRate, address _nft,uint _nftId) {
         require(_startingPrice >= _discountRate * DURATION, "starting price < min");
 
         seller = payable(msg.sender);
