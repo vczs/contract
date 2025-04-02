@@ -23,7 +23,7 @@ contract MultiSigWallet {
     Transaction[] private transactions;
     mapping(uint => mapping(address => bool)) private txOwnerConfirm;
 
-    (address[] memory _owners, uint _exeNeedMinConfirmOwnerNum) {
+    _constructor(address[] memory _owners, uint _exeNeedMinConfirmOwnerNum) {
         require(_owners.length > 0, "owners required");
         require(_exeNeedMinConfirmOwnerNum > 0 && _exeNeedMinConfirmOwnerNum <= _owners.length,"invalid number of required confirmations");
 
