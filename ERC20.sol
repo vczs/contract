@@ -25,7 +25,7 @@ contract ERC20 is IERC20 {
     mapping (address => uint) private balances;
     mapping (address => mapping (address => uint)) private allowances;
 
-    _constructor(uint256 _initialSupply) {
+    constructor(uint256 _initialSupply) {
         owner = msg.sender;
         totalSupply = _initialSupply * 10**decimals;
         balances[msg.sender] = totalSupply;
