@@ -24,7 +24,7 @@ contract EnglishAuction {
     address public highestBidder;
     mapping(address => uint) public bids;
 
-   _constructor(address _nft,uint _nftId, uint _startingBid) {
+    constructor(address _nft,uint _nftId, uint _startingBid) {
         nft = IERC721(_nft);
         nftId = _nftId;
 
