@@ -23,7 +23,7 @@ contract TimeLock {
     mapping(address => bytes32[]) private callerTxIds;
     mapping(bytes32 => address) private txIdCaller;
 
-    _constructor() {owner = msg.sender;}
+    constructor() {owner = msg.sender;}
 
     receive() external payable {}
 
@@ -94,7 +94,7 @@ contract TestTimeLock {
 
     uint public status = 1;
 
-    _constructor(address _timeLock) {
+    constructor(address _timeLock) {
         timeLock = _timeLock;
     }
 
